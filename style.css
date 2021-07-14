@@ -1,0 +1,215 @@
+/* common style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*----------****************Top section***********************--------  */
+
+
+.top-banner{
+    display: flex;
+    background-color: #2D25A0;
+    
+    overflow: hidden;
+}
+
+.top-banner:hover .photo{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+.half-width {
+    width: 50%;
+    padding-left: 5%;
+}
+.half-width img {
+    width: 80%;
+}
+h1 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: bold;
+    line-height: 80px;
+    color: white;
+  }
+.right-arrow{
+    margin-left: 10px;
+}
+.link-button{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    border: none;
+}
+
+
+
+/* ------------*************Player section style ----------- **************/
+
+.container{
+    margin-top: 70px;
+    background-color: #FFFFFF;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-bottom: 100px;
+
+}
+.player-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 45px;
+}
+.player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 27px;
+}
+
+.player .thumbnail img{
+    width: 100%;
+
+
+}
+.player-description{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* *******************-------------final team section **************-------------- */
+
+.team-heading{
+    color: black;
+    text-align: center;
+}
+
+.top-team{
+    display: flex;
+    margin-bottom:100px;
+
+}
+
+.team img{
+    border-radius: 50%;
+}
+.team{
+    text-align: center;
+
+}
+.team p{
+    font-size: 40px;
+}
+
+
+/*--------------------------------- BLOG SECTION  -----------------------*/
+
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color:#9f9f9f;
+    font-size: 16px;
+
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+
+
+/* footer  */
+
+.footer-image{
+    width: 100%;
+    text-align: center;
+}
+.footer-icon{
+    text-align: center;
+}
+footer img{
+    width: 483.87px;
+    height: 110px;
+}
+
+
+/*-------------------------------------- media query------------------------------  */
+
+/* -----------mobile  ----------*/
+
+
+@media only screen and (max-width:688px) {
+    .top-banner{
+        flex-direction: column;
+    }
+    .top-banner img{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .player-list, .blogs{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .player{
+        width: 100%;
+        align-items: center;
+    }
+    .blogs{
+        flex-direction: column;
+
+    }
+    footer img{
+        width: 50%;
+        align-items: center;
+    }
+
+}
+
+
+
+/* ------------------tablet----------- */
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-banner{
+        flex-direction: column;
+    }
+
+    .player-list, .blogs{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-column-gap: 50px;
+    }
+    .player{
+        width: 100%;
+    }
+    .blogs{
+        flex-direction: column;
+
+    }
+
+
+}
